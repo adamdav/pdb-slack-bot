@@ -2,24 +2,6 @@ require 'json'
 require 'net/http'
 
 def invoke(event:, context:)
-  # print("Sending message to Slack: {}".format(text))
-  # json_txt = json.dumps({
-  #     "channel": data["event"]["channel"],
-  #     "text": text
-  # }).encode('utf8')
-
-  # headers = {
-  #     "Content-Type": "application/json",
-  #     "Authorization": "Bearer {}".format(BOT_TOKEN)
-  # }
-
-  # req = urllib.request.Request(
-  #     SLACK_URL,
-  #     data=json_txt,
-  #     headers=headers
-  # )
-  # urllib.request.urlopen(req)
-
   body = {
     message: 'Go Serverless v1.0! Your function executed successfully!',
     input: event
