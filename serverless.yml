@@ -5,10 +5,12 @@ provider:
   runtime: ruby2.5
 
 functions:
-  invoke:
-    handler: handler.invoke
+  command:
+    handler: handler.command
     events:
       - http:
           path: /
           method: post
           cors: true
+    environment:
+      PUPPET_DEBUGGER_URL: https://kamb3pjud7.execute-api.us-east-1.amazonaws.com/dev/eval
