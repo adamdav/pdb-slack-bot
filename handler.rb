@@ -20,6 +20,6 @@ def command(event:, context:)
 
   {
     statusCode: 200,
-    body: "```#{res.body}```"
+    body: "\u0060\u0060\u0060#{res.body}\u0060\u0060\u0060"
   }
 end
