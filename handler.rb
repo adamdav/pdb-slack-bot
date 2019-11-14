@@ -7,10 +7,10 @@ def command(event:, context:)
 
   cmd = case text
   when nil
-    "help"
+    "commands"
   else
     if text.strip == ''
-      "help"
+      "commands"
     else
       text.strip
     end
